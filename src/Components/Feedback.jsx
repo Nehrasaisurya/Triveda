@@ -22,18 +22,21 @@ const Feedback = () => {
   return (
     <section id="Reviews">
       <div className="">
-        <div className="flex flex-col md:flex-row w-10/12 md:w-8/12 mx-auto mt-10 gap-6">
+        <div className=" w-12/12 md:w-8/12 mx-auto mt-10 gap-6">
           <Carousel
             infiniteLoop
             autoPlay
             showArrows={true}
             showIndicators={false}
+            showStatus={false}
           >
             {reviewsData.map((review, index) => (
               <div key={index} className="p-5">
                 <FaQuoteLeft className="mb-4" />
-                <p className=" tracking-wider text-1xl">{review.text}</p>
-                <FaQuoteRight className="float-right mr-7" />
+                <p className=" tracking-wider md:text-sm lg:text-xl">
+                  {review.text}
+                </p>
+                <FaQuoteRight className="float-right" />
                 <div className="mt-8 ">
                   <p>-----</p>
                   <p className="secondary-font text-xl">{review.user}</p>

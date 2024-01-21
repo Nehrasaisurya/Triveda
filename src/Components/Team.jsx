@@ -2,35 +2,43 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 const data = [
   {
-    name: "Nehra",
-    img: "/Images/download.jpeg",
+    name: "Rahul",
+    img: "/Images/team.jpg",
+    desc: "Associate Manager",
     review:
       "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
   },
   {
-    name: "Nehra",
-    img: "/Images/download.jpeg",
+    name: "Rahul",
+    img: "/Images/team.jpg",
+
+    desc: "Associate Manager",
     review:
       "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
   },
   {
-    name: "Nehra",
-    img: "/Images/download.jpeg",
+    name: "Rahul",
+    img: "/Images/team.jpg",
+    desc: "Associate Manager",
     review:
       "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
   },
   {
-    name: "Nehra",
-    img: "/Images/download.jpeg",
+    name: "Rahul",
+    img: "/Images/team.jpg",
+    desc: "Associate Manager",
     review:
       "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
   },
   {
-    name: "Nehra",
-    img: "/Images/download.jpeg",
+    name: "Rahul",
+    img: "/Images/team.jpg",
+    desc: "Associate Manager",
     review:
       "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
   },
@@ -75,8 +83,22 @@ const Team = () => {
           <Slider {...settings}>
             {data.map((item) => (
               <div className="">
-                <div className="rounded-md h-56">
-                  <img src={item.img} className="w-full h-full" />
+                <div className="rounded-md h-56 container">
+                  <img src={item.img} className="w-full h-full image" />
+                  <div className="middle">
+                    <div>
+                      <div className="text text-white font-semibold text-3xl">
+                        {item.name}
+                      </div>
+                      <div className="text-white underline underline-offset-4">
+                        {item.desc}
+                      </div>
+                      <div className="flex items-center justify-center text-white mt-3 gap-3">
+                        <FaLinkedinIn />
+                        <IoMdMail />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}

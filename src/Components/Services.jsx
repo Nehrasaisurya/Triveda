@@ -111,7 +111,7 @@ const Services = () => {
         </p>
       </div>
       <div className="w-full " id="bg-img2">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-2 md:px-32 py-32 items-center ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-2 md:px-10 lg:px-32 py-32 items-center">
           <div className="text-white z-50 flex flex-col items-center text-center my-auto px-10">
             <CgWebsite className="text-white text-7xl" />
             <h1 className="text-xl font-bold mt-2 mb-3">Web design</h1>
@@ -144,7 +144,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#141414] grid grid-cols-1 md:grid-cols-3 gap-10 px-2 md:px-32 py-32 items-center ">
+      <div className="bg-[#141414] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-2 md:px-10 py-32 items-center ">
         <div className="text-white z-30 flex flex-col items-center text-center my-auto bg-[#121212] p-10">
           <PiToolbox className="text-white text-7xl" />
           <h1 className="text-xl font-bold mt-2 mb-3">Consulting</h1>
