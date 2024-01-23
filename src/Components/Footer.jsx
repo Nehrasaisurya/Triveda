@@ -13,7 +13,8 @@ const Footer = () => {
           <h1 className="text-white font-bold text-lg uppercase">Follow Us</h1>
           <div className="flex gap-2 mt-4">
             <a
-              href=""
+              href="https://www.linkedin.com/company/triveda-technologies/?viewAsMember=true"
+              target="_blank"
               className="w-10 h-10 rounded-full bg-[#333333] flex flex-col items-center justify-center src2 overflow-hidden hover:bg-blue-500"
             >
               <div className="w-10 h-10 rounded-full  flex items-center justify-center h1 py-10 mt-4">
@@ -74,16 +75,22 @@ const Footer = () => {
           <h1 className="opacity-70 text-sm mt-5">+91 86396 48822</h1>
         </div>
         <div className="text-white">
-          <h1 className="text-lg font-bold uppercase">MAIL US</h1>
-          <h1 className="opacity-70 text-sm mt-5">
+          <h1 className="text-lg font-bold uppercase mb-5">MAIL US</h1>
+          <a
+            className="opacity-70 text-sm "
+            href="mailto:3vedatechnologies@gmail.com"
+          >
             3vedatechnologies@gmail.com
-          </h1>
+          </a>
         </div>
         <div className="text-white">
-          <h1 className="text-lg font-bold uppercase">WE'R HIRING</h1>
-          <h1 className="opacity-70 text-sm mt-5">
+          <h1 className="text-lg font-bold uppercase mb-5">WE'R HIRING</h1>
+          <a
+            className="opacity-70 text-sm "
+            href="mailto:3vedatechnologies@gmail.com"
+          >
             3vedatechnologies@gmail.com
-          </h1>
+          </a>
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-5 justify-between bg-[#000000] px-4 md:px-10 lg:px-20 py-8">

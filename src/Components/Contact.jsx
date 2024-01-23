@@ -35,9 +35,10 @@ const Contact = () => {
           <div>
             <h1 className="uppercase font-semibold text-[#34495E]">India</h1>
             <h1 className="text-sm mt-3 opacity-80">
-              65-6-415,Gajuwaka,
-              <br /> Visakhapatnam,
-              <br /> Andhra Pradesh - 530026
+              M/S Vishnu Institute Of Technolgy,
+              <br /> Vishnupur, Vishnupur Bhimavaram,
+              <br />
+              West Godavari, Andhra Pradesh 534202
             </h1>
           </div>
         </div>

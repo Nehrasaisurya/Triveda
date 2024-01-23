@@ -22,15 +22,15 @@ const Navbar = () => {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <div className="">
+    <div className=" shadow-md">
       <div
         className={
           navbar
-            ? `w-full fixed top-0 left-0 flex items-center justify-between px-4 md:px-10 lg:px-20 py-2 scroll z-50`
+            ? `w-full fixed top-0 left-0 flex items-center justify-between px-4 md:px-10 lg:px-20 scroll z-50 shadow-md`
             : `w-full fixed flex items-center justify-between px-2 md:px-10 lg:px-20 py-2 normal`
         }
       >
-        {navbar && <img src="Images/TriVeda2.png" className="w-20 md:w-40" />}
+        {navbar && <img src="Images/TriVeda2.png" className="w-32 md:w-48" />}
         {navbar && (
           <div>
             <div className="md:flex gap-5 font-semibold hidden">
@@ -89,6 +89,7 @@ const Navbar = () => {
               >
                 Team
               </Link>
+              <Link className="cursor-pointer">Innovations</Link>
               <Link
                 activeClass="active"
                 to="Contact"
@@ -117,7 +118,13 @@ const Navbar = () => {
           </button>
           {navbar && show && (
             <div>
-              <div className="absolute top-10 right-6 flex flex-col md:hidden gap-5 bg-white px-16 py-10 shadow-lg rounded-lg">
+              <div
+                className="absolute top-12 right-6 flex flex-col md:hidden gap-5 bg-white px-14 py-10 text-xl rounded-md"
+                style={{
+                  boxShadow:
+                    "0 0 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px  rgba(0, 0, 0, 0.1)",
+                }}
+              >
                 <Link
                   activeClass="active"
                   to="Home"
@@ -173,6 +180,7 @@ const Navbar = () => {
                 >
                   Team
                 </Link>
+                <Link className="cursor-pointer">Innovations</Link>
                 <Link
                   activeClass="active"
                   to="Contact"

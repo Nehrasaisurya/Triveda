@@ -7,40 +7,39 @@ import { IoMdMail } from "react-icons/io";
 
 const data = [
   {
-    name: "Rahul",
-    img: "/Images/team.jpg",
-    desc: "Associate Manager",
-    review:
-      "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
+    name: "Nukaraju",
+    img: "/Images/1.jpg",
+    desc: "Founder & CEO",
+    linkedin: "https://www.linkedin.com/in/nukarajuneradabilli/",
+    email: "neradabillinukaraju@gmail.com",
   },
   {
-    name: "Rahul",
-    img: "/Images/team.jpg",
-
-    desc: "Associate Manager",
-    review:
-      "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
+    name: "Divya",
+    img: "/Images/2.png",
+    desc: "Cofounder",
+    linkedin: "https://www.linkedin.com/in/divya-maddipati",
+    email: "divyamaddipati999@gmail.com",
   },
   {
-    name: "Rahul",
-    img: "/Images/team.jpg",
-    desc: "Associate Manager",
-    review:
-      "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
+    name: "Name",
+    img: "/Images/2.png",
+    desc: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/nukarajuneradabilli/",
+    email: "neradabillinukaraju@gmail.com",
   },
   {
-    name: "Rahul",
-    img: "/Images/team.jpg",
-    desc: "Associate Manager",
-    review:
-      "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
+    name: "Name",
+    img: "/Images/2.png",
+    desc: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/nukarajuneradabilli/",
+    email: "neradabillinukaraju@gmail.com",
   },
   {
-    name: "Rahul",
-    img: "/Images/team.jpg",
-    desc: "Associate Manager",
-    review:
-      "wertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnmwertyuiopasdfghjkklzxcvbnm",
+    name: "Name",
+    img: "/Images/2.png",
+    desc: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/nukarajuneradabilli/",
+    email: "neradabillinukaraju@gmail.com",
   },
 ];
 
@@ -83,7 +82,7 @@ const Team = () => {
           <Slider {...settings}>
             {data.map((item) => (
               <div className="">
-                <div className="rounded-md h-56 container">
+                <div className="rounded-md container aspect-square">
                   <img src={item.img} className="w-full h-full image" />
                   <div className="middle">
                     <div>
@@ -94,8 +93,12 @@ const Team = () => {
                         {item.desc}
                       </div>
                       <div className="flex items-center justify-center text-white mt-3 gap-3">
-                        <FaLinkedinIn />
-                        <IoMdMail />
+                        <a href={item.linkedin} target="_blank">
+                          <FaLinkedinIn />
+                        </a>
+                        <a href={"mailto:" + item.email} target="_blank">
+                          <IoMdMail />
+                        </a>
                       </div>
                     </div>
                   </div>

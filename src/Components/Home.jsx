@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "particles.js";
+import { Link } from "react-scroll";
 
 const Home = () => {
   useEffect(() => {
@@ -131,7 +132,7 @@ const Home = () => {
       ></div>
       <div className=" flex flex-col px-4 md:px-10 lg:px-20 w-full h-full z-40">
         <div className="py-2 z-40">
-          <img src="Images/TriVeda2.png" className="w-20 md:w-40 " />
+          <img src="Images/TriVeda2.png" className="w-32 md:w-48 " />
         </div>
         <div className="flex flex-col items-center justify-center mt-44 md:mt-32 text-center">
           <h1
@@ -157,12 +158,13 @@ const Home = () => {
             <br />
             with cutting edge technologies at high speed
           </p>
-          <button
-            className="bg-[#04253C] px-10 py-4 text-white text-xl mt-5"
-            data-aos="zoom-out"
-            data-aos-delay="250"
-          >
-            Explore Us
+          <button data-aos="zoom-out" data-aos-delay="250" className="mt-10">
+            <Link
+              to="Services"
+              className="bg-[#04253C] px-10 py-4 text-white text-xl mt-5 cursor-pointer"
+            >
+              Explore Us
+            </Link>
           </button>
         </div>
       </div>
